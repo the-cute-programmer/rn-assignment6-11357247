@@ -35,7 +35,7 @@ const CartScreen = () => {
               <Text style={styles.description}>{item.description}</Text>
               <Text style={styles.price}>{item.price}</Text>
               <TouchableOpacity style={styles.removeButton} onPress={() => removeFromCart(item)}>
-                <Text style={styles.removeButtonText}>Remove from Cart</Text>
+                <Image source={require("../assets/remove.png")}style={styles.removeButtonIcon}></Image>
               </TouchableOpacity>
             </View>
           </View>
@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
   },
-  removeButtonText: {
-    color: '#fff',
+  removeButtonIcon: {
+    color: 'red',
     fontWeight: 'bold',
   },
 });

@@ -68,7 +68,14 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>OUR STORY</Text>
+        <View>
+            <Text style={styles.title}>OUR STORY</Text>
+            <View>
+                <Image source={require("../assets/Listview.png")}></Image>
+                <Image source={require("../assets/Filter.png")}></Image>
+            </View>
+        </View>
+      
       <FlatList
         data={products}
         keyExtractor={(item) => item.id}
